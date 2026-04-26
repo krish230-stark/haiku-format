@@ -22,6 +22,13 @@ See the [specific instructions](linux.md) for information about using `haiku-for
      * `install.sh`
 
 ## Using haiku-format
+## Quick Usage Guide
+
+After installing haiku-format, you can format a file using:
+
+```bash
+haiku-format your_file.cpp
+```
 
 > [!WARNING]
 > Please remove existing `.haiku-format` config files if you installed v10.0.1 before.
@@ -30,6 +37,7 @@ Haiku-format is a superset of clang-format with the default style set to `Haiku`
 You can override any default
 [style options](https://releases.llvm.org/22.1.0/tools/clang/docs/ClangFormatStyleOptions.html)
 with `.haiku-format` config files. For example:
+
 
 ```
 # for legacy code
