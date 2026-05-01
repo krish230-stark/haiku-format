@@ -1,5 +1,7 @@
 #!/bin/bash -e
+set -e
 
+echo "Starting haiku-format installation..."
 scriptDir=clang/tools/clang-format
 
 configDir=~/config
@@ -28,3 +30,5 @@ if [ "$1" = "-s" ]; then
 	cd build/lib
 	cp -fv lib@(clang|LLVM)!(*Gen*).so.* $nonPackagedDir/lib
 fi
+
+echo "Installation completed successfully!"
