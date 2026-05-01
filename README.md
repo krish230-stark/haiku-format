@@ -22,6 +22,23 @@ See the [specific instructions](linux.md) for information about using `haiku-for
      * `install.sh`
 
 ## Using haiku-format
+#### Example: Before vs After Formatting
+
+Before:
+```cpp
+bool isEven(int n){if(n%2==0){return true;}else{return false;}}
+```
+
+After:
+```cpp
+bool isEven(int n) {
+    if (n % 2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+```
 
 > [!WARNING]
 > Please remove existing `.haiku-format` config files if you installed v10.0.1 before.
