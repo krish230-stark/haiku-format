@@ -1,9 +1,8 @@
 #!/bin/bash -e
 set -e
 
-if [ -n "$1" ] && [ "$1" != "-s" ]; then
-	echo "Invalid argument"
-    echo "Usage: ./install.sh [-s]"
+if [ -n "$1" ]; then
+    echo "Error: this script does not accept arguments"
     exit 1
 fi
 scriptDir=clang/tools/clang-format
