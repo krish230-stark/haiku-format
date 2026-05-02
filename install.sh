@@ -2,7 +2,7 @@
 set -e
 
 if [ -n "$1" ]; then
-    echo "Error: this script does not accept arguments"
+    echo "Error: this script does not accept arguments" >&2
     exit 1
 fi
 scriptDir=clang/tools/clang-format
